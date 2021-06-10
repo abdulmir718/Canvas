@@ -1,0 +1,78 @@
+.navbar {
+    width: 100%;
+    height: 70px;
+    /* position: sticky; */
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(31, 31, 31);
+
+}
+
+.leftBar {
+    flex: 1.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerBar {
+    flex: 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.centerBar > a {
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+
+.rightBar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.rightBar > a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.icons {
+    margin-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: rgb(212,175,55)
+}
+
+.centerLinks {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.rightLinks {
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+
+.cartIcon {
+    font-size: 25px;
+    color:rgb(212,175,55);
+    
+    
+}
+
+
+
+/* @media (max-width: 375px) {
+    .navbar {
+    display: flex;
+    }
+} */

@@ -1,0 +1,31 @@
+.header {
+    margin-top: 0px;
+    background-image: url('https://i.imgur.com/vZAozuU.png');
+    height: 30rem;
+}
+
+.headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 110px;
+    font-family: 'Lora', serif;
+    font-size: 80px;
+    color: white;
+    
+}
+
+ .siteTitle {
+    font-size: 100px;
+}
+
+.artistName {
+    font-size: 40px;
+}
+
+.headerImg {
+    width: 100;
+    object-fit: cover;
+    
+
+}
