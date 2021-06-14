@@ -28,14 +28,15 @@ function NavBar(props) {
                 </div>
                 
                 <div className = 'centerBar'>
-                
+
+                <div className = 'centerBarText'>
                     <Link to = '/'>
                         Home
                         <span className = 'centerLinks homeLink'></span>
                     </Link>
                 
                     <Link to = '/about'>
-                        About Pierre
+                        Meet the Artist
                         <span className = 'centerLinks aboutLink'></span>
                     </Link>
                 
@@ -43,15 +44,17 @@ function NavBar(props) {
                         Contact
                         <span className = ' centerLinks contactLink'></span>
                     </Link>
-                
+                </div>
                 </div>
                 <div className = 'rightBar'>
                 
                     <Link to = '/cart'>
-                    <i className=" cartIcon fas fa-shopping-bag"></i>
-                        <span className = ' rightLinks cartLink'>
-                        <span className = "cartCount"> 0</span>
-                        </span>
+                    <div className ='cartContainer'>
+                        <i className=" cartIcon fas fa-shopping-bag"></i>
+                        <span className = ' rightLinks cartLink'></span>
+                        <p className = "cartCount"> 0</p>
+                        </div>
+                        
                         
                     </Link>
                 

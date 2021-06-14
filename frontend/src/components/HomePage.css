@@ -1,8 +1,36 @@
-.gallaryTitle{
-    margin-top: 30px;
-    margin-left: 15px;
+.homepageTitle{
+    margin-top: 2rem;
+    margin-left: 2.75rem;
     font-family: 'Lora', serif;
     font-size: 62px;
     
 
+}
+
+.paintingsGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* margin-left: 20px; */
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 1400px) {
+    .paintingsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1050px) {
+    .paintingsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
+}
+@media (max-width: 975px) {
+    .paintingsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50px;
+    }
 }

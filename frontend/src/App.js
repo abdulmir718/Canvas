@@ -3,7 +3,7 @@ import NavBar from './components/NavBar.js';
 import HomePage from './components/HomePage.js';
 import PaintingDetails from './components/PaintingDetails.js';
 import Cart from './components/Cart.js';
-import Checkout from './components/Cart.js';
+import Checkout from './components/Checkout';
 import Login from './components/Login.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';

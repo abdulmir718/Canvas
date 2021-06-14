@@ -1,0 +1,92 @@
+.paintings {
+    width: 450px;
+    padding: 1rem;
+    /* background-color: rgba(214, 211, 211, 0.502); */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    /* margin: 8px auto; */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* cursor: pointer; */
+    border-radius: .5rem;
+    
+}
+
+.paintingImg {
+    border: solid 4px black;
+    padding: .3rem;
+}
+
+.paintingsGrid {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.paintings > {
+    height: 40px;
+    border-radius: 50px;
+    
+}
+
+.paintingInfo {
+    text-align: center;
+    
+}
+.paintingInfo > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+}
+
+.paintingName {
+    font-size: 20px;
+    font-family: 'Varela', sans-serif;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.viewPainting {
+    display: block;
+    width: 35%;
+    height: 23px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(31, 31, 31);
+    background-color:rgb(208, 167, 118);
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: 'Varela', sans-serif;
+}
+
+.learnMoreButton {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.viewPainting:hover {
+    background-color:rgb(226, 187, 139);
+}
+
+@media (max-width: 1400px) {
+    .paintings {
+        width: 500px;
+    }
+}
+@media (max-width: 1050px) {
+    .paintings {
+        width: 600px;
+    }
+}
+
+@media (max-width: 660px) {
+    .paintings {
+        width: 370px;
+    }
+}
