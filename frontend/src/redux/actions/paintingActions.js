@@ -9,12 +9,13 @@ export const getPaintings = () => async (dispatch) => {
 
         dispatch({
             type: actionTypes.GET_PAINTINGS_SUCCESSFUL,
-            payload: data
-        })
+            payload: data,
+        });
     } catch (error) {
         dispatch({
             type: actionTypes.GET_PAINTINGS_FAILED,
-            payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            payload:
+                error.response && error.response.data.message ? error.response.data.message : error.message,
         });
     }
 };
@@ -23,16 +24,17 @@ export const getPaintingDetails = (id) => async (dispatch) => {
     try {
         dispatch({type: actionTypes.GET_PAINTING_DETAILS});
 
-        const {data} = await axios.get(`/paintings${id}`);
+        const {data} = await axios.get(`/paintings/${id}`);
 
         dispatch({
             type: actionTypes.GET_PAINTING_DETAILS_SUCCESSFUL,
-            payload: data
-        })
+            payload: data,
+        });
     } catch (error) {
         dispatch({
             type: actionTypes.GET_PAINTING_DETAILS_FAILED,
-            payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            payload:
+                error.response && error.response.data.message ? error.response.data.message : error.message,
         });
     }
 };

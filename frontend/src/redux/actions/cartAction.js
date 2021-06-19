@@ -14,11 +14,11 @@ dispatch({
         price: data.price,
         description: data.description,
         imageUrl: data.imageUrl,
-        sold: data.sold
+        sold: data.sold,
 
         
 
-    }
+    },
 });
     localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
 
@@ -27,7 +27,7 @@ dispatch({
 export const deleteFromCart = (id) => (dispatch, getState) => {
     dispatch({
         type: actionTypes.DELETE_FROM_CART,
-        payload: id
+        payload: id,
     });
     localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
 };
