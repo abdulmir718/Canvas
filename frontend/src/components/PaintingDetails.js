@@ -1,5 +1,5 @@
 import './PaintingDetails.css'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {addToCart} from '../redux/actions/cartAction.js';
@@ -9,6 +9,7 @@ import {getPaintingDetails} from '../redux/actions/paintingActions.js';
 function PaintingDetails({match, history}) {
     
     const dispatch = useDispatch();
+    
 
     const paintingDetails = useSelector((state) => state.getPaintingDetails);
     const {loading, error, painting} = paintingDetails;
@@ -21,7 +22,12 @@ function PaintingDetails({match, history}) {
             dispatch(getPaintingDetails(match.params.id));
         };
 
-    }, [dispatch, match, painting]);
+    }, [dispatch, painting, match]);
+
+    const addToCartHandler= () => {
+        dispatch(addToCart(painting._id));
+        history.push('/cart');
+    };
 
     return (
         <div className = 'paintingDetails'>
@@ -44,7 +50,7 @@ function PaintingDetails({match, history}) {
                             <p className = 'paintingDescription'>{painting.description}</p>
                             {/* <p className = 'paintingSold'>{painting.sold === false ? 'Available' : 'Sold'}</p> */}
                         <div className = 'paintDetailsButtons'>
-                            <button className = 'acquireButton' type = 'button'>Acquire Artwork</button>
+                            <button className = 'acquireButton' type = 'button' onClick = {addToCartHandler}>Acquire Artwork</button>
                             <Link to = '/cart' className = 'viewCartButton'>
                                 <button type = 'button'> View Cart</button>
                             </Link>
