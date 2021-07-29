@@ -1,10 +1,12 @@
 import React from 'react';
+import './Checkout.css';
 
 function Checkout(props) {
     return (
-        <div>
+        <div className = 'mainCheckoutContainer'>
             <h1 className = 'checkoutTitle'>Checkout</h1>
-            <h2 className = 'shippingInfo'>Shipping Information</h2>
+        <div className = 'checkoutInfoContainer'>
+            <h2 className = 'shippingInfoTitle'>Shipping Information</h2>
             <form>
                     <label className = 'checkoutInfo'>
                         <input firstname = 'first name'/>
@@ -74,7 +76,7 @@ function Checkout(props) {
                         <input zipcode = 'zip code'/>
                         <p>Zip Code</p>
             
-                <h2>Payment Information</h2>
+                <h2 className = 'paymentInfoTitle'>Payment Information</h2>
             
                         <input firstname = 'first name'/>
                         <p>First Name</p>
@@ -114,7 +116,7 @@ function Checkout(props) {
                         <input cvv = 'cvv'/>
                         <p>CVV</p>
 
-                <h2>Billing Address</h2>
+                <h2 className = 'billingInfoTitle'>Billing Address</h2>
                 <input streetaddress = 'street address'/>
                         <p>Street Address</p>
                         <input city = 'city'/>
@@ -124,9 +126,9 @@ function Checkout(props) {
                         <input zipcode = 'zip code'/>
                         <p>Zip Code</p>
                     </label>
-                 <button type = 'submit'>Confirm Purchase</button>
+                 <button type = 'submit' className = 'confirmButton'>Confirm Purchase</button>
             </form>
-           
+            </div>
         </div>
     );
 }

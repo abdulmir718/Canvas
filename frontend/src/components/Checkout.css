@@ -1,0 +1,58 @@
+.checkoutInfoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.mainCheckoutContainer {
+    margin: 2rem;
+}
+
+.checkoutTitle {
+    color: rgb(31, 31, 31);
+    font-family: 'Lora', serif;
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.shippingInfoTitle, .paymentInfoTitle, .billingInfoTitle {
+    color: rgb(31, 31, 31);
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.checkoutInfo > p {
+    font-family: 'Varela', sans-serif;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+input {
+    width: 100%;
+    height: 1.5rem;
+}
+
+select {
+    width: 50%;
+    height: 1.5rem;
+    justify-content: space-between;
+}
+
+.confirmButton {
+    margin-top: 1rem;
+    color: rgb(31, 31, 31);
+    background-color:rgb(208, 167, 118);
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: 'Varela', sans-serif;
+    padding: .5rem;
+}
