@@ -4,8 +4,26 @@ import './Contact.css';
 
 function Contact(props) {
     return (
-        <div className = 'contactpage'>
-            Contact Page
+        <div className = 'contactPage'>
+            <div className = 'contactPageMainContainer'>
+            <h1 className = 'contactTitle'>Contact</h1>
+            <div className = 'contactInfoContainer'>
+            <form>
+                
+                <label className = 'contactInfo'>
+                    <input firstname = 'first name'/>
+                        <p>First Name</p>
+                    <input lastname = 'last name'/>
+                        <p>Last Name</p>
+                    <input email = 'email'/>
+                        <p>Email</p>
+                        <input message = 'message'/>
+                        <p>Message</p>
+                </label>
+                <button type = 'submit' className = 'sendButton'>Send Message</button>
+            </form>
+            </div>
+            </div>
         </div>
     );
 }
