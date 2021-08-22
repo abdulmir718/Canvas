@@ -12,6 +12,6 @@ For this project, I devised a scenario in where I was commisioned by an artist t
 
 #Post MVP Stretch Goals
 
--As a user, I would like to be able to create a log in authentication.
--As a user, I would like to be able to check out via Swipe API Integration.
--As a user, I would like to be able to contact the artists and send a message via the webpage.
+- As a user, I would like to be able to create a log in authentication.
+- As a user, I would like to be able to check out via Swipe API Integration.
+- As a user, I would like to be able to contact the artists and send a message via the webpage.
