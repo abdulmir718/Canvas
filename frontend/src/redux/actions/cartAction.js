@@ -1,33 +1,29 @@
-import * as actionTypes from '../constants/cartConstats';
-import axios from 'axios';
+import * as actionTypes from "../constants/cartConstats";
+import axios from "axios";
 
-export const addToCart = (id) => async (dispatch, getState) => {
-    const {data} = await axios.get(`/paintings/${id}`);
- 
+export const addToCart = (id, qty) => async (dispatch, getState) => {
+  const { data } = await axios.get(`/paintings/${id}`);
 
-dispatch({
+  dispatch({
     type: actionTypes.ADD_TO_CART,
     payload: {
-        painting: data._id,
-        name: data.name,
-        year: data.year,
-        price: data.price,
-        description: data.description,
-        imageUrl: data.imageUrl,
-        sold: data.sold,
-
-        
-
+      painting: data._id,
+      name: data.name,
+      year: data.year,
+      price: data.price,
+      description: data.description,
+      imageUrl: data.imageUrl,
+      sold: data.sold,
+      qty,
     },
-});
-    localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
-
+  });
+  localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems));
 };
 
 export const deleteFromCart = (id) => (dispatch, getState) => {
-    dispatch({
-        type: actionTypes.DELETE_FROM_CART,
-        payload: id,
-    });
-    localStorage.setItem('cart', JSON.stringify(getState().cart.cartItems));
+  dispatch({
+    type: actionTypes.DELETE_FROM_CART,
+    payload: id,
+  });
+  localStorage.setItem("cart", JSON.stringify(getState().cart.cartItems));
 };
